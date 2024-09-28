@@ -20,6 +20,20 @@ function krsApplication(name, programId, gpa) {
     } else if (programId === "TKM") {
         idStudent = `Teknik Kimia`
     }
+
+    if (gpa >= 3 && gpa <= 4) {
+        return `Hallo ${name}, berdasarkan IP semester lalu sebesar ${gpa}, kamu dapat mengambil SKS sebanyak 24 SKS untuk semester depan.`
+    } else if (gpa >= 2.5 && gpa <= 2.99) {
+        return `Hallo ${name}, berdasarkan IP semester lalu sebesar ${gpa}, kamu diwajibkan melakukan bimbingan dengan dosen pembimbing pada prodi ${idStudent} dan hanya dapat mengambil SKS sebanyak 21 SKS untuk semester depan.`
+    } else if (gpa >= 2 && gpa <= 2.49) {
+        return `Hallo ${name}, berdasarkan IP semester lalu sebesar ${gpa}, kamu diwajibkan melakukan bimbingan dengan dosen pembimbing pada prodi ${idStudent} dan hanya dapat mengambil SKS sebanyak 18 SKS untuk semester depan.`
+    } else if (gpa >= 1.5 && gpa <= 1.99) {
+        return `Hallo ${name}, berdasarkan IP semester lalu sebesar ${gpa}, kamu diwajibkan melakukan bimbingan dengan dosen pembimbing pada prodi ${idStudent} dan hanya dapat mengambil SKS sebanyak 15 SKS untuk semester depan.`
+    } else if (gpa >= 0 && gpa <= 1.49) {
+        return `Hallo ${name}, berdasarkan IP semester lalu sebesar ${gpa}, kamu diwajibkan melakukan bimbingan dengan dosen pembimbing pada prodi ${idStudent} dan hanya dapat mengambil SKS sebanyak 15 SKS untuk semester depan.`
+    } else {
+        return `Invalid gpa number`
+    }
 }
 
 // Dilarang menghapus/mangganti code dibawah ini!!!
