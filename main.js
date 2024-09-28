@@ -30,7 +30,7 @@ function krsApplication(name, programId, gpa) {
     } else if (gpa >= 1.5 && gpa <= 1.99) {
         return `Hallo ${name}, berdasarkan IP semester lalu sebesar ${gpa}, kamu diwajibkan melakukan bimbingan dengan dosen pembimbing pada prodi ${idStudent} dan hanya dapat mengambil SKS sebanyak 15 SKS untuk semester depan.`
     } else if (gpa >= 0 && gpa <= 1.49) {
-        return `Hallo ${name}, berdasarkan IP semester lalu sebesar ${gpa}, kamu diwajibkan melakukan bimbingan dengan dosen pembimbing pada prodi ${idStudent} dan hanya dapat mengambil SKS sebanyak 15 SKS untuk semester depan.`
+        return `Hallo ${name}, berdasarkan IP semester lalu sebesar ${gpa}, kamu diwajibkan melakukan bimbingan dengan dosen pembimbing pada prodi ${idStudent} dan hanya dapat mengambil SKS sebanyak 12 SKS untuk semester depan.`
     } else {
         return `Invalid gpa number`
     }
